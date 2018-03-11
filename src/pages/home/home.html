@@ -3,10 +3,24 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Informações</ion-title>
+    <ion-title>Início</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-row>
+    <ion-card *ngFor="let option of options" col-6 ion-col>
+      <ion-card-content>
+        <ion-row>
+          <img src="{{ option.icon }}">
+        </ion-row>
+        <ion-row>
+          <h4>{{ option.title }}</h4>
+        </ion-row>
+        <ion-row>
+          <h4>{{ option.subtitle }}</h4>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
 </ion-content>

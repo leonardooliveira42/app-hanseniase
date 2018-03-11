@@ -24,7 +24,7 @@ export class MyApp {
 
     //ngFor and navigation
     this.pages = [
-      { title: 'Informações', component: HomePage },
+      { title: 'Início', component: HomePage },
       { title: 'Como usar', component: HowToUsePage },
       { title: 'Referências', component: ReferencesPage },
       { title: 'Sobre', component: AboutPage }
