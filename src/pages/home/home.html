@@ -8,17 +8,22 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-row class="align-all-items-center" style="padding-bottom: 25px;">
+    <img id="logo" src="../../assets/imgs/logo.png">
+    <span class="app-title">HANSENÍASE</span>
+    <span class="app-type">aplicativo médico</span>
+  </ion-row>
   <ion-row>
     <ion-card *ngFor="let option of options" col-6 ion-col>
-      <ion-card-content>
+      <ion-card-content class="align-all-items-center">
         <ion-row>
           <img src="{{ option.icon }}">
         </ion-row>
         <ion-row>
-          <h4>{{ option.title }}</h4>
+          <span>{{ option.title }}</span>
         </ion-row>
         <ion-row>
-          <h4>{{ option.subtitle }}</h4>
+          <span>{{ option.subtitle }}</span>
         </ion-row>
       </ion-card-content>
     </ion-card>

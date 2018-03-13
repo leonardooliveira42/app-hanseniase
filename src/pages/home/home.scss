@@ -1,15 +1,59 @@
-page-home {
+ion-content{
+  //gradient
+  /* IE10+ */
+  background-image: -ms-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
 
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #C9FDFF), color-stop(65, #FFFFFF));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
+
+  /* W3C Markup */
+  background-image: linear-gradient(to top right, #C9FDFF 0%, #FFFFFF 61%);
 }
 
-ion-card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-ion-card {
-  height: 115px;
+ion-card{
+  height: 128px;
   border: $border-primary;
+  border-bottom: none;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  background: transparent !important;
+
+  &:nth-child(odd) {
+    border-right: none;
+  }
+
+  &:nth-child(7), &:nth-child(8){
+    border-bottom: $border-primary;
+  }
+}
+
+span{
+  font-size: 1.2rem !important;
+}
+
+ion-row > img{
+  padding-bottom: 10px;
+}
+
+#logo{
+  width: 35px;
+  height: 46px;
+}
+
+.app-title{
+  font-size: 2.8rem !important;
+  font-weight: 200;
+}
+
+.app-type{
+  font-size: 1.4rem !important;
 }
