@@ -9,12 +9,12 @@
 
 <ion-content padding>
   <ion-row class="align-all-items-center" style="padding-bottom: 25px;">
-    <img id="logo" src="../../assets/imgs/logo.png">
+    <img id="logo" src="./assets/imgs/logo.png">
     <span class="app-title">HANSENÍASE</span>
     <span class="app-type">aplicativo médico</span>
   </ion-row>
   <ion-row>
-    <ion-card *ngFor="let option of options" col-6 ion-col>
+    <ion-card *ngFor="let option of options" col-6 ion-col (click)="openPage(option)">
       <ion-card-content class="align-all-items-center">
         <ion-row>
           <img src="{{ option.icon }}">

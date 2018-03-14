@@ -34,7 +34,15 @@ ion-card{
   &:nth-child(7), &:nth-child(8){
     border-bottom: $border-primary;
   }
+
+  &:active {
+    ion-row > img{
+      transition: transform 0.25s ease;
+      transform: scale(2);
+    }
+  }
 }
+
 
 span{
   font-size: 1.2rem !important;
