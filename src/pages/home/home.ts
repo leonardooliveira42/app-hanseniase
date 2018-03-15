@@ -4,10 +4,10 @@ import { NavController } from 'ionic-angular';
 import { HowToUsePage } from '../how-to-use/how-to-use';
 import { ReferencesPage } from '../references/references';
 import { SymptomsPage } from '../symptoms/symptoms';
-
+import { GenericPage } from '../generic/generic';
 
 import { SymptomsProvider } from '../../providers/symptoms-provider/symptoms-provider';
-
+import { GenericProvider } from '../../providers/generic/generic';
 
 @Component({
   selector: 'page-home',
@@ -21,14 +21,14 @@ export class HomePage {
       title: 'o que é',
       subtitle: '',
       icon: './assets/icon/o-que-e.png',
-      component: ''
+      component: GenericPage
     },
     {
       id: 'fazer',
       title: 'o que fazer',
       subtitle: '',
       icon: './assets/icon/o-que-fazer.png',
-      component: ''
+      component: GenericPage
     },
     {
       id: 'neural',
@@ -56,7 +56,7 @@ export class HomePage {
       title: 'se você não é um professional de saúde o que fazer',
       subtitle: '',
       icon: './assets/icon/ambulancia.png',
-      component: ''
+      component: GenericPage
     },
     {
       id: 'como',
@@ -78,7 +78,8 @@ export class HomePage {
 
   constructor(
     public navCtrl: NavController,
-    public symptomsProvider: SymptomsProvider
+    public symptomsProvider: SymptomsProvider,
+    public genericProvider: GenericProvider
 
   ) { }
 
@@ -88,6 +89,8 @@ export class HomePage {
     //in case of option is about symptoms
     if(option.id == 'neural' || option.id == 'manchas' || option.id == 'outros'){
       this.symptomsProvider.setRenderObj(option.id);
+    }else{
+      this.genericProvider.setRenderObj(option.id);
     }
   }
 
