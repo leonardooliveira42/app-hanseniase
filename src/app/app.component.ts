@@ -10,6 +10,8 @@ import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
 import { SensibilityTestPage } from '../pages/sensibility-test/sensibility-test';
 
+import { NavChangeProvider } from '../providers/nav-change/nav-change';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -19,8 +21,13 @@ export class MyApp {
 
   rootPage: any = HomePage;
   pages: Array<{title: string, component: any}>;
-
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  showFooter: boolean = false;
+  constructor(
+    public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen,
+    public navChangeProvider: NavChangeProvider
+  ) {
     this.initializeApp();
 
     //ngFor and navigation
@@ -43,9 +50,19 @@ export class MyApp {
     });
   }
 
+  ngOnInit(){
+    this.navChangeProvider.getNavChangeEmitter()
+      .subscribe(item => {this.showFooter =  item});
+  }
+
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.push(page.component);
   }
+
+  goToRoot(){
+    this.nav.setRoot(HomePage);
+  }
+
 }

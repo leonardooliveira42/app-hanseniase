@@ -17,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provider';
 import { HansTypeProvider } from '../providers/hans-type/hans-type';
 import { GenericProvider } from '../providers/generic/generic';
+import { NavChangeProvider } from '../providers/nav-change/nav-change';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { GenericProvider } from '../providers/generic/generic';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SymptomsProvider,
     HansTypeProvider,
-    GenericProvider
+    GenericProvider,
+    NavChangeProvider
   ]
 })
 export class AppModule {}

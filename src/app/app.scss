@@ -35,3 +35,12 @@ ion-card{
   font-weight: 200;
   color: $text-color !important;
 }
+
+ion-footer > ion-icon{
+  font-size: 4.8rem;
+  color: $text-color;
+}
+
+ion-content{
+  padding-bottom: 40px;
+}

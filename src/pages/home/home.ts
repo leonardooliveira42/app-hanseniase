@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { HowToUsePage } from '../how-to-use/how-to-use';
@@ -8,6 +8,7 @@ import { GenericPage } from '../generic/generic';
 
 import { SymptomsProvider } from '../../providers/symptoms-provider/symptoms-provider';
 import { GenericProvider } from '../../providers/generic/generic';
+import { NavChangeProvider } from '../../providers/nav-change/nav-change';
 
 @Component({
   selector: 'page-home',
@@ -15,7 +16,8 @@ import { GenericProvider } from '../../providers/generic/generic';
 })
 
 export class HomePage {
-  options: Array<{id: string,title: string, subtitle: string, icon: string, component: any}> = [
+
+  options: Array<{id: string, title: string, subtitle: string, icon: string, component: any}> = [
     {
       id: 'eh',
       title: 'o que é',
@@ -74,14 +76,21 @@ export class HomePage {
     }
   ];
 
-  @Input() option;
-
   constructor(
     public navCtrl: NavController,
     public symptomsProvider: SymptomsProvider,
-    public genericProvider: GenericProvider
-
+    public genericProvider: GenericProvider,
+    public navChangeProvider: NavChangeProvider
   ) { }
+
+
+  ionViewDidLeave(){
+    this.navChangeProvider.emitNavChangeEvent(true);
+  }
+
+  ionViewDidEnter(){
+    this.navChangeProvider.emitNavChangeEvent(false);
+  }
 
   openPage(option){
     this.navCtrl.push(option.component);

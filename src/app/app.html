@@ -15,8 +15,10 @@
       </button>
     </ion-list>
   </ion-content>
-
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content></ion-nav>
+<ion-footer class="row" justify-content-center *ngIf="showFooter">
+  <ion-icon id="home" name="ios-home-outline" (click)="goToRoot()"></ion-icon>
+</ion-footer>
