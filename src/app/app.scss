@@ -10,3 +10,27 @@
   align-items: center;
   text-align: center;
 }
+
+.page-title{
+  font-size: 1.6rem !important;
+  font-weight: 200;
+}
+
+.little-padding-bottom{
+  padding-bottom: 10px !important;
+}
+
+ion-card{
+  border: $border-primary;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.node{
+  border-radius: 8px !important;
+}
+
+.node-text{
+  font-size: 1.5rem;
+  font-weight: 200;
+}

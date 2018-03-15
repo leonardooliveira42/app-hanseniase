@@ -1,3 +1,33 @@
 page-symptoms {
 
+  ion-content{
+    /* IE10+ */
+    background-image: -ms-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 50%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 50%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 50%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #C9FDFF), color-stop(50, #FFFFFF));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 50%);
+
+    /* W3C Markup */
+    background-image: linear-gradient(to top right, #C9FDFF 0%, #FFFFFF 50%);
+  }
+
+  button{
+    width: 33%;
+    background: none;
+    border: $border-primary;
+    color: $text-color;
+    margin: 12px;
+    padding: 4px;
+    border-radius: 8px;
+    line-height: 1.3;
+  }
 }

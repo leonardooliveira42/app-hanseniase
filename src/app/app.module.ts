@@ -8,6 +8,7 @@ import { HowToUsePage } from '../pages/how-to-use/how-to-use';
 import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
 import { SymptomsPage } from '../pages/symptoms/symptoms';
+import { SensibilityTestPage } from '../pages/sensibility-test/sensibility-test';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,7 +21,8 @@ import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provid
     HowToUsePage,
     ReferencesPage,
     AboutPage,
-    SymptomsPage
+    SymptomsPage,
+    SensibilityTestPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provid
     HowToUsePage,
     ReferencesPage,
     AboutPage,
-    SymptomsPage
+    SymptomsPage,
+    SensibilityTestPage
   ],
   providers: [
     StatusBar,

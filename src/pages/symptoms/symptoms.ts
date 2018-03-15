@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SymptomsProvider } from '../../providers/symptoms-provider/symptoms-provider';
+import { SensibilityTestPage } from '../../pages/sensibility-test/sensibility-test';
 
 /**
  * Generated class for the SymptomsPage page.
@@ -14,6 +15,7 @@ import { SymptomsProvider } from '../../providers/symptoms-provider/symptoms-pro
   templateUrl: 'symptoms.html',
 })
 export class SymptomsPage {
+  renderObj: any = {};
 
   constructor(
     public navCtrl: NavController,
@@ -22,7 +24,11 @@ export class SymptomsPage {
   ) {}
 
   ionViewDidLoad() {
-    console.log(this.symptomsProvider.getRenderObj());
+    this.renderObj = this.symptomsProvider.getRenderObj()
   }
 
+  //To SensibilityTestPage
+  toTest(){
+    this.navCtrl.push(SensibilityTestPage);
+  }
 }

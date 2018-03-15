@@ -13,7 +13,7 @@ export class SymptomsProvider {
   symptoms: any = [
      {
       id: 'neural',
-      title: 'SINAIS E SINTOMAS',
+      title: 'Sinais e Sintomas',
       subtitle: 'COMPROMENTIMENTO NEURAL',
       nodes: [
         {
@@ -49,7 +49,7 @@ export class SymptomsProvider {
      },
     {
      id: 'manchas',
-     title: 'SINAIS E SINTOMAS',
+     title: 'Sinais e Sintomas',
      subtitle: 'MANCHAS',
      nodes: [
        {
@@ -81,8 +81,8 @@ export class SymptomsProvider {
     },
    {
     id: 'outros',
-    title: 'OUTROS SINAIS E SINTOMAS',
-    subtitle: '',
+    title: 'Sinais e Sintomas',
+    subtitle: 'OUTROS',
     nodes: [
       {
         description: 'Infiltração facial com madarose superciliar e ciliar, hansenomas nos pavilhões auriculares, espessamento e acentuação dos sulcos cutâneos.',

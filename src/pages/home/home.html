@@ -17,7 +17,7 @@
     <ion-card *ngFor="let option of options" col-6 ion-col (click)="openPage(option)">
       <ion-card-content class="align-all-items-center">
         <ion-row>
-          <img src="{{ option.icon }}">
+          <img src="{{ option.icon }}" class="little-padding-bottom">
         </ion-row>
         <ion-row>
           <span>{{ option.title }}</span>

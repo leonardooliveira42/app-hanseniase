@@ -7,12 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Sintomas</ion-title>
+    <ion-title>{{ renderObj.title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-
+  <ion-row class="align-all-items-center">
+    <img class="little-padding-bottom" src="{{ renderObj.icon }}">
+    <span class="page-title">{{ renderObj.subtitle }}</span>
+  </ion-row>
+  <ion-card class="node" *ngFor="let symptom of renderObj.nodes" padding>
+    <span class="node-text">{{ symptom.description }}</span>
+  </ion-card>
+  <ion-row justify-content-center *ngIf="renderObj.id == 'neural'">
+    <button (click)="toTest()">TESTE DE SENSIBILIDADE</button>
+  </ion-row>
 </ion-content>
