@@ -9,10 +9,12 @@ import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
 import { SymptomsPage } from '../pages/symptoms/symptoms';
 import { SensibilityTestPage } from '../pages/sensibility-test/sensibility-test';
+import { HansTypePage } from '../pages/hans-type/hans-type';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provider';
+import { HansTypeProvider } from '../providers/hans-type/hans-type';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provid
     ReferencesPage,
     AboutPage,
     SymptomsPage,
-    SensibilityTestPage
+    SensibilityTestPage,
+    HansTypePage
   ],
   imports: [
     BrowserModule,
@@ -36,13 +39,15 @@ import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provid
     ReferencesPage,
     AboutPage,
     SymptomsPage,
-    SensibilityTestPage
+    SensibilityTestPage,
+    HansTypePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SymptomsProvider
+    SymptomsProvider,
+    HansTypeProvider
   ]
 })
 export class AppModule {}

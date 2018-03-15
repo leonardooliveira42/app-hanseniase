@@ -17,7 +17,7 @@
     <img class="little-padding-bottom" src="{{ renderObj.icon }}">
     <span class="page-title">{{ renderObj.subtitle }}</span>
   </ion-row>
-  <ion-card class="node" *ngFor="let symptom of renderObj.nodes" padding>
+  <ion-card class="node" *ngFor="let symptom of renderObj.nodes" padding (click)="openHansType(symptom.hansType)">
     <span class="node-text">{{ symptom.description }}</span>
   </ion-card>
   <ion-row justify-content-center *ngIf="renderObj.id == 'neural'">
