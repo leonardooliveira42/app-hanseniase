@@ -13,7 +13,7 @@ export class HansTypeProvider {
       id: 'indeterminada',
       title: 'HANSENÍASE INDETERMINADA',
       description: ['Forma inicial, evolui espontaneamente para cura na maioria dos casos ou evolui para as formas polarizadas em cerca de 25% dos casos, o que pode ocorrer no prazo de 3 a 5 anos. Geralmente, encontra-se apenas uma lesão, de cor mais clara que a pele normal, com distúrbio da sensibilidade, ou áreas circunscritas de pele com aspecto normal e com distúrbio de sensibilidade, podendo ser acompanhadas de alopecia e/ou anidrose.'],
-      imgs: ['./assets/x.png','./assets/x.png']
+      imgs: ['./assets/imgs/x.png','./assets/imgs/x.png']
     },
     {
       id: 'vircho',
@@ -40,7 +40,7 @@ export class HansTypeProvider {
         ou fibromas, com grande número de troncos
         nervosos de forma simétrica.`
       ],
-      imgs: ['./assets/x.png','./assets/x.png']
+      imgs: ['./assets/imgs/x.png','./assets/imgs/x.png']
     },
     {
       id: 'tuberculoide',
@@ -64,7 +64,7 @@ export class HansTypeProvider {
         por lesões papulosas ou nodulares únicas ou
         em pequeno número, principalmente na face.`
       ],
-      imgs: ['./assets/x.png','./assets/x.png']
+      imgs: ['./assets/imgs/x.png','./assets/imgs/x.png']
     },
     {
       id: 'dimorfa',
@@ -72,7 +72,7 @@ export class HansTypeProvider {
       description: [
         `Forma intermediária, resultante de uma imunidade também intermediária, com características clínicas e laboratoriais que podem se aproximar do polo tuberculoide ou virchowiano. A variedade de lesões cutâneas é maior e estas apresentam-se como placas, nódulos eritêmato-acastanhados, em grande número, com tendência à simetria. As lesões mais características dessa forma clínica são denominadas lesões pré-faveolares ou faveolares, sobre-elevadas ou não, com áreas centrais deprimidas e aspecto de pele normal, com limites internos nítidos e externos difusos. O acometimento dos nervos é mais extenso, podendo ocorrer neurites agudas de grave prognóstico.`
       ],
-      imgs: ['./assets/x.png','./assets/x.png']
+      imgs: ['./assets/imgs/x.png','./assets/imgs/x.png']
     }
   ];
 

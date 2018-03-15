@@ -15,6 +15,12 @@
 
 <ion-content padding>
   <ion-row justify-content-center>
-    <span class="page-title" text-center>{{ renderObj.title }}</span>
+    <span class="page-title" text-center style="padding: 15px;">{{ renderObj.title }}</span>
+  </ion-row>
+  <ion-card class="node" padding>
+    <p class="node-text" *ngFor="let p of renderObj.description">{{ p }}</p>
+  </ion-card>
+  <ion-row class="little-padding-bottom" *ngFor="let img of renderObj.imgs" justify-content-center>
+    <img src="{{ img }}">
   </ion-row>
 </ion-content>

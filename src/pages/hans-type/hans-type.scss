@@ -1,3 +1,21 @@
 page-hans-type {
+  ion-content{
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top left, #C9FDFF 0%, #FFFFFF 45%);
 
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top left, #C9FDFF 0%, #FFFFFF 45%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top left, #C9FDFF 0%, #FFFFFF 45%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #C9FDFF), color-stop(45, #FFFFFF));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top left, #C9FDFF 0%, #FFFFFF 45%);
+
+    /* W3C Markup */ 
+    background-image: linear-gradient(to bottom right, #C9FDFF 0%, #FFFFFF 45%);
+  }
 }

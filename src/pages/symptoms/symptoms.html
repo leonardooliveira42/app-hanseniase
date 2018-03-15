@@ -19,6 +19,9 @@
   </ion-row>
   <ion-card class="node" *ngFor="let symptom of renderObj.nodes" padding (click)="openHansType(symptom.hansType)">
     <span class="node-text">{{ symptom.description }}</span>
+    <ion-row justify-content-end>
+      <ion-icon name="arrow-round-forward"></ion-icon>
+    </ion-row>
   </ion-card>
   <ion-row justify-content-center *ngIf="renderObj.id == 'neural'">
     <button (click)="toTest()">TESTE DE SENSIBILIDADE</button>
