@@ -64,7 +64,7 @@ export class MyApp {
   }
 
   goToRoot(){
-    this.nav.setRoot(HomePage);
+    this.nav.popToRoot();
   }
 
 }
