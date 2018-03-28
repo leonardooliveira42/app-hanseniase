@@ -1,4 +1,4 @@
-# app-hihanseniase
+# app-hanseniase
 
 ### Description
 
