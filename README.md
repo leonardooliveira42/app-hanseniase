@@ -11,6 +11,12 @@ This is a project developed by LTIA (Applied Information Technology Laboratory) 
 * Developer: Carolina Junqueira Ferreira
 * Designer: Daniel Nichiata
 
+### View the application
+Commands in the project folder:
+
+* npm install
+* ionic serve
+
 ### Technologies 
 
 * Ionic 3
