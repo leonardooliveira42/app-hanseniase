@@ -35,45 +35,45 @@ export class HomePage {
     {
       id: 'neural',
       title: 'sinais e sintomas',
-      subtitle: 'compromentimento neural',
+      subtitle: '',
       icon: './assets/icon/sinais.png',
       component: SymptomsPage
-    },
-    {
-      id: 'manchas',
-      title: 'sinais e sintomas',
-      subtitle: 'manchas',
-      icon: './assets/icon/sinais-manchas.png',
-      component: SymptomsPage
-    },
-    {
-      id:'outros',
-      title: 'outros sinais e sintomas',
-      subtitle: '',
-      icon: './assets/icon/outros.png',
-      component: SymptomsPage
-    },
-    {
-      id: 'profissional',
-      title: 'se você não é um professional de saúde o que fazer',
-      subtitle: '',
-      icon: './assets/icon/ambulancia.png',
-      component: GenericPage
-    },
-    {
-      id: 'como',
-      title: 'como usar o app?',
-      subtitle: '',
-      icon: './assets/icon/como-usar.png',
-      component: HowToUsePage
-    },
-    {
-      id: 'referencias',
-      title: 'referências',
-      subtitle: '',
-      icon: './assets/icon/referencias.png',
-      component: ReferencesPage
     }
+    // {
+    //   id: 'manchas',
+    //   title: 'sinais e sintomas',
+    //   subtitle: 'manchas',
+    //   icon: './assets/icon/sinais-manchas.png',
+    //   component: SymptomsPage
+    // },
+    // {
+    //   id:'outros',
+    //   title: 'outros sinais e sintomas',
+    //   subtitle: '',
+    //   icon: './assets/icon/outros.png',
+    //   component: SymptomsPage
+    // },
+    // {
+    //   id: 'profissional',
+    //   title: 'se você não é um professional de saúde o que fazer',
+    //   subtitle: '',
+    //   icon: './assets/icon/ambulancia.png',
+    //   component: GenericPage
+    // },
+    // {
+    //   id: 'como',
+    //   title: 'como usar o app?',
+    //   subtitle: '',
+    //   icon: './assets/icon/como-usar.png',
+    //   component: HowToUsePage
+    // },
+    // {
+    //   id: 'referencias',
+    //   title: 'referências',
+    //   subtitle: '',
+    //   icon: './assets/icon/referencias.png',
+    //   component: ReferencesPage
+    // }
   ];
 
   constructor(

@@ -14,9 +14,11 @@ $app-direction: ltr;
 
 @import "ionic.globals";
 
-$primary: #00FFFF;
+// $primary: #00FFFF;
+$primary: #8d5090;
 
-$text-color: #3fd2eb;
+// $text-color: #85639c;
+ $text-color: #925db7;
 
 $border-primary: 2px solid $primary;
 
@@ -45,7 +47,7 @@ $background-page: #C9FDFF;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #8d5090,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,

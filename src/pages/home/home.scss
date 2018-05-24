@@ -1,38 +1,10 @@
 page-home{
 
-  ion-content{
-    //gradient
-    /* IE10+ */
-    background-image: -ms-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #C9FDFF), color-stop(65, #FFFFFF));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(bottom left, #C9FDFF 0%, #FFFFFF 61%);
-
-    /* W3C Markup */
-    background-image: linear-gradient(to top right, #C9FDFF 0%, #FFFFFF 61%);
-  }
-
   ion-card{
-    height: 128px;
-    border-bottom: none;
+    height: 110px;
     text-transform: uppercase;
-
-    &:nth-child(odd) {
-      border-right: none;
-    }
-
-    &:nth-child(7), &:nth-child(8){
-      border-bottom: $border-primary;
-    }
+    border-radius: 12px !important;
+    margin: 12px !important;
 
     &:active {
       ion-row > img{
@@ -44,20 +16,23 @@ page-home{
 
   span{
     font-size: 1.2rem !important;
+    white-space: nowrap;
+  }
+
+  img{
+    margin-top: -20px;
+    width: 80px;
+    height: 80px;
   }
 
   #logo{
-    width: 35px;
-    height: 46px;
-    padding-bottom: 10px;
+    width: 140px;
+    height: 140px;
   }
 
-  .app-title{
-    font-size: 2.8rem !important;
-    font-weight: 200;
+  .row-pyramid{
+    justify-content: center;
+    align-content: flex-start;
   }
 
-  .app-type{
-    font-size: 1.4rem !important;
-  }
 }

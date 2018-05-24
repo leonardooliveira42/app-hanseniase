@@ -10,20 +10,15 @@
 <ion-content padding>
   <ion-row class="align-all-items-center" style="padding-bottom: 25px;">
     <img id="logo" src="./assets/imgs/logo.png">
-    <span class="app-title">HANSENÍASE</span>
-    <span class="app-type">aplicativo médico</span>
   </ion-row>
-  <ion-row>
-    <ion-card *ngFor="let option of options" col-6 ion-col (click)="openPage(option)">
+  <ion-row class="row-pyramid">
+    <ion-card *ngFor="let option of options" col-5 ion-col (click)="openPage(option)">
       <ion-card-content class="align-all-items-center">
         <ion-row>
-          <img src="{{ option.icon }}" class="little-padding-bottom">
+          <img src="{{ option.icon }}">
         </ion-row>
         <ion-row>
           <span>{{ option.title }}</span>
-        </ion-row>
-        <ion-row>
-          <span>{{ option.subtitle }}</span>
         </ion-row>
       </ion-card-content>
     </ion-card>
