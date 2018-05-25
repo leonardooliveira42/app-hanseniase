@@ -18,7 +18,6 @@ export class HowToUsePage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HowToUsePage');
   }
 
 }

@@ -1,21 +1,22 @@
-page-how-to-use {
-  ion-content{
-    /* IE10+ */
-    background-image: -ms-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 60%);
+page-how-to-use{
+  .section-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background: $primary;
+  }
 
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 60%);
+  #roxa{
+    width: 8.8rem;
+    position: absolute;
+    right: 0;
+  }
 
-    /* Opera */
-    background-image: -o-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 60%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #C9FDFF), color-stop(60, #FFFFFF));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 60%);
-
-    /* W3C Markup */
-    background-image: linear-gradient(to top left, #C9FDFF 0%, #FFFFFF 60%);
-      }
+  #branca{
+    position: absolute;
+    left: -3px;
+    width: 8rem;
+    bottom: 0;
+  }
 }
