@@ -12,18 +12,15 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-row class="align-all-items-center">
     <img class="little-padding-bottom" src="{{ renderObj.icon }}">
     <span class="page-title">{{ renderObj.subtitle }}</span>
   </ion-row>
-  <ion-card class="node" *ngFor="let symptom of renderObj.nodes" padding (click)="openHansType(symptom.hansType)">
+  <ion-card class="node" *ngFor="let symptom of renderObj.nodes" padding> <!---(click)="openHansType(symptom.hansType) -->
     <span class="node-text">{{ symptom.description }}</span>
     <ion-row justify-content-end>
       <ion-icon name="arrow-round-forward"></ion-icon>
     </ion-row>
   </ion-card>
-  <ion-row *ngIf="renderObj.id == 'neural'">
-    <button (click)="toTest()">TESTE DE SENSIBILIDADE</button>
-  </ion-row>
 </ion-content>

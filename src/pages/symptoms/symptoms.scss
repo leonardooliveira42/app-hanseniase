@@ -1,25 +1,5 @@
 page-symptoms {
-
-  ion-content{
-    /* IE10+ */
-    background-image: -ms-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 70%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 70%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 70%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #C9FDFF), color-stop(70, #FFFFFF));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(bottom right, #C9FDFF 0%, #FFFFFF 70%);
-
-    /* W3C Markup */
-    background-image: linear-gradient(to top left, #C9FDFF 0%, #FFFFFF 70%);
-  }
-
+  
   button{
     width: 33%;
     background: none;

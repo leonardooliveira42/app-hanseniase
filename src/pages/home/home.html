@@ -7,12 +7,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-row class="align-all-items-center">
     <img id="logo" src="./assets/imgs/logo.png">
   </ion-row>
   <ion-row class="row-pyramid">
-    <ion-card *ngFor="let option of options" col-5 ion-col (click)="openPage(option)">
+    <ion-card class="node" *ngFor="let option of options" col-5 ion-col (click)="openPage(option)">
       <ion-card-content class="align-all-items-center">
         <ion-row>
           <img src="{{ option.icon }}">

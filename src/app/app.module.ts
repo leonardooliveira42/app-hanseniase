@@ -8,14 +8,11 @@ import { HowToUsePage } from '../pages/how-to-use/how-to-use';
 import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
 import { SymptomsPage } from '../pages/symptoms/symptoms';
-import { SensibilityTestPage } from '../pages/sensibility-test/sensibility-test';
-import { HansTypePage } from '../pages/hans-type/hans-type';
 import { GenericPage } from '../pages/generic/generic';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provider';
-import { HansTypeProvider } from '../providers/hans-type/hans-type';
 import { GenericProvider } from '../providers/generic/generic';
 import { NavChangeProvider } from '../providers/nav-change/nav-change';
 
@@ -27,8 +24,6 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     ReferencesPage,
     AboutPage,
     SymptomsPage,
-    SensibilityTestPage,
-    HansTypePage,
     GenericPage
   ],
   imports: [
@@ -43,8 +38,6 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     ReferencesPage,
     AboutPage,
     SymptomsPage,
-    SensibilityTestPage,
-    HansTypePage,
     GenericPage
   ],
   providers: [
@@ -52,7 +45,6 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SymptomsProvider,
-    HansTypeProvider,
     GenericProvider,
     NavChangeProvider
   ]

@@ -11,66 +11,32 @@ export class GenericProvider {
   pages: any = [
     {
       id: 'eh',
-      title: 'O que é',
-      subtitle: '',
-      icon: './assets/icon/o-que-e.png',
-      description: [
-        `A hanseníase é uma doença crônica, infectocontagiosa,
-        e é capaz de infectar grande número
-        de indivíduos , embora poucos adoeçam.
-        Em 2017, o Brasil ocupou a segunda posição em
-        casos de hanseníase com 28.761.`,
-        `O diagnóstico é realizado por meio de uma
-        análise da história e condições de vida da pessoa e
-        um exame dermatoneurológico, para identificar
-        lesões e alterações dos nervos periféricos.`,
-        `A principal via de eliminação do bacilo e a mais
-        provável via de entrada do organismo são as vias
-        aéreas superiores (mucosa nasal e orofaringe).`
-      ]
+      title: 'O que é a doença hanseníase',
+      descriptions: [
+        `Causada pela Mycobacterium leprae que infecta
+        nervos periféricos`,
+        `Primeiros sinais e sintomas são lesão ou mancha de
+        pele com ou sem espessamento do nervo com
+        perda de sensibilidade`,
+        `Regiões com queda de pelo, pele seca e que ardem,
+        cocem ou piniquem`,
+        `Notificação compulsória na confirmação do diagnóstico`,
+        `Investigação epidemiológica obrigatória para o caso
+        confirmado e seus contatos`
+      ],
+      imgs: []
     },
     {
-      id: 'fazer',
-      title: 'O que fazer',
-      subtitle: '',
-      icon: './assets/icon/o-que-fazer.png',
-      description: [
-        `O diagnóstico de hanseníase deve ser recebido
-        de modo semelhante ao de outras doenças curá-
-        veis.`,
-        `Se vier a causar impacto psicológico, tanto em
-        quem adoeceu quanto nos familiares ou em pessoas
-        de sua rede social, essa situação requererá
-        uma abordagem apropriada pela equipe de
-        saúde, que favoreça a aceitação do problema, superação
-        das dificuldades e maior adesão ao tratamento.`,
-        `Essa atenção deve ser oferecida no momento
-        do diagnóstico, bem como no decorrer do tratamento
-        da doença e, se necessário, após a alta.`,
-        `Outro ponto importante é que o profissional
-        realize busca ativa de contatos para que haja intervenção
-        na cadeia de transmissão da doença. A
-        hanseníase é uma doença de notificação compulsória
-        em todo território nacional e investigação
-        obrigatória.`
-      ]
+      id: 'lesao',
+      title: 'Lesão',
+      descriptions: [],
+      imgs: ['./assets/imgs/img1.png','./assets/imgs/img2.png','./assets/imgs/img3.png','./assets/imgs/img4.png','./assets/imgs/img5.png']
     },
     {
-      id: 'profissional',
-      title: 'Profissional',
-      subtitle: 'SE VOCÊ NÃO É UM PROFISSIONAL DE SAÚDE O QUE FAZER',
-      icon: './assets/icon/ambulancia.png',
-      description: [
-        `Caso você resida no município de São Paulo,
-        acesse o link do site Busca Saúde
-        (http://buscasaude.prefeitura.sp.gov.br/) para que
-        você possa encontrar a Unidade Básica de Saúde
-        mais próxima.`,
-        `Caso você não resida no município de São
-        Paulo, pesquise no site da Secretaria de Saúde do
-        seu município para encontrar a Unidade Básica
-        de Saúde mais próxima de você.`
-      ]
+      id: 'nervo',
+      title: 'Comprometimento do nervo periférico',
+      descriptions: [],
+      imgs: ['./assets/imgs/img6.png','./assets/imgs/img7.png']
     }
   ];
 

@@ -5,22 +5,20 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>{{ renderObj.title }}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-  <ion-row class="align-all-items-center">
-    <img class="little-padding-bottom" src="{{ renderObj.icon }}">
-    <span class="page-title">{{ renderObj.subtitle }}</span>
-  </ion-row>
-  <ion-card class="node" padding>
-    <p class="node-text" *ngFor="let p of renderObj.description">
-      {{ p }}
-    </p>
+<ion-content>
+  <ion-card class="node little-margin-top" padding-right>
+    <ul>
+      <li class="node-text" *ngFor="let p of renderObj.descriptions" padding-bottom>
+        {{ p }}
+      </li>
+    </ul>
+    <!-- <img *ngFor="let im of renderObj.imgs" src="{{ im }}"/> -->
   </ion-card>
+
 </ion-content>

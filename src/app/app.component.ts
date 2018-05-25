@@ -8,7 +8,6 @@ import { HomePage } from '../pages/home/home';
 import { HowToUsePage } from '../pages/how-to-use/how-to-use';
 import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
-import { SensibilityTestPage } from '../pages/sensibility-test/sensibility-test';
 
 import { NavChangeProvider } from '../providers/nav-change/nav-change';
 
@@ -34,7 +33,6 @@ export class MyApp {
     this.pages = [
       { title: 'Início', component: HomePage },
       { title: 'Como usar', component: HowToUsePage },
-      { title: 'Teste de Sensibilidade', component: SensibilityTestPage},
       { title: 'Bibliografia', component: ReferencesPage },
       { title: 'Criação e Apoio', component: AboutPage },
     ];
