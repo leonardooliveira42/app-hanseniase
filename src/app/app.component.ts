@@ -35,8 +35,8 @@ export class MyApp {
       { title: 'Início', component: HomePage },
       { title: 'Como usar', component: HowToUsePage },
       { title: 'Teste de Sensibilidade', component: SensibilityTestPage},
-      { title: 'Referências', component: ReferencesPage },
-      { title: 'Sobre', component: AboutPage },
+      { title: 'Bibliografia', component: ReferencesPage },
+      { title: 'Criação e Apoio', component: AboutPage },
     ];
 
   }

@@ -6,30 +6,35 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Sobre</ion-title>
+    <ion-title>Criação e Apoio</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card class="node" padding>
-    <p class="node-text">
-      Este é um aplicativo produzido pela Escola
-      de Enfermagem da USP, em parceria com o Laboratório
-      de Tecnologia da Informação Aplicada
-      (LTIA), da UNESP Bauru, 2018.
-    </p>
-    <p class="node-text">Coordenação: João Vitor Mattos</p>
-    <p class="node-text">Desenvolvimento: Carolina Junqueira Ferreira</p>
-    <p class="node-text">Design: Daniel Jyoji Nichiata</p>
-      <ion-row>
-        <ion-col>
-          <img src="./assets/imgs/ltia.png">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
+<ion-content>
+  <ion-card class="card-purple">
+    <ion-card-content>
+      <p *ngFor="let author of authors">
+        <span> {{ author.type }} </span>
+        <span> {{ author.names }} </span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+    <ion-row style="margin: -25px 0 30px 0" align-items-center>
+      <ion-col>
+        <a href="http://cnpq.br/">
+          <img src="./assets/imgs/cnpq.png">
+        </a>
+      </ion-col>
+      <ion-col>
+        <a href="http://www.ee.usp.br/site/">
           <img src="./assets/imgs/usp.png">
-        </ion-col>
-      </ion-row>
-</ion-card>
+        </a>
+      </ion-col>
+      <ion-col>
+        <a href="http://www.ltia.fc.unesp.br/">
+          <img src="./assets/imgs/ltia.png">
+        </a>
+      </ion-col>
+    </ion-row>
+
 </ion-content>

@@ -18,8 +18,32 @@ export class AboutPage{
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+
   ionViewDidLoad() {
 
   }
+
+    authors: Array<{type: string, names: string}> = [
+        {
+          type: 'Coordenação do Projeto',
+          names: 'Lúcia Yasuko Izumi Nichiata - Departamento de Enfermagem em Saúde Coletiva'
+        },
+        {
+          type: 'Equipe de pesquisadores',
+          names:  'Bruna Duarte Canci, Érica Gomes Pereira, Karen Namie Sakata So'
+        },
+        {
+          type: 'Assessoria técnica',
+          names: 'Maria Ângela Bianconcini Trindade e João Avancini - Laboratório de Imunodermatologia HCFMUSP, pesquisadora Científica VI'
+        },
+        {
+          type: 'Desenvolvimento',
+          names: 'LTIA - Laboratório de Tecnologia da Informação Aplicada - UNESP Bauru (João Vitor Mattos, Carolina Junqueira Ferreira e Daniel Jyoji Nichiata)'
+        },
+        {
+          type: 'Apoio',
+          names: 'Unidade de Vigilância em Saúde Lapa-Pinheiros da Secretaria Municipal de Saúdede São Paulo'
+        }
+    ]
 
 }

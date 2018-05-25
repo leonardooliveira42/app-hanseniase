@@ -7,31 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Referências</ion-title>
+    <ion-title>Bibliografia</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-  <ion-content padding>
-    <ion-row class="align-all-items-center">
-      <img class="little-padding-bottom" src="./assets/icon/referencias.png">
-    </ion-row>
-    <ion-card class="node" padding>
-      <p class="node-text">
-        Curso Online de Hanseníase na Atenção Básica; UNASUS
-      </p>
-      <p class="node-text">
-        Brasil. Ministério da Saúde, Secretaria de Vigilância
-        em Saúde, Departamento de Vigilância
-        das Doenças Transmissíveis. Diretrizes para vigilância,
-        atenção e eliminação da hanseníase
-        como problema de saúde pública. Brasília; 2016.
-      </p>
-      <p class="node-text">
-        Brasil. Ministério da Saúde, Secretaria de Vigilância
-        em Saúde, Coordenação - Geral de Desenvolvimento
-        da Epidemiologia em Serviços.
-        Manual técnico de hanseníase. Brasília; 2017.
-      </p>
+  <ion-content>
+    <ion-card class="card-purple">
+      <ion-card-content>
+        <p *ngFor="let bib of bibs">
+          <span> {{ bib.title }} </span>
+          <a href="{{ bib.link }}"> {{ bib.description }} </a>
+        </p>
+      </ion-card-content>
     </ion-card>
   </ion-content>

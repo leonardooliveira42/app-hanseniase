@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { HowToUsePage } from '../how-to-use/how-to-use';
-import { ReferencesPage } from '../references/references';
 import { SymptomsPage } from '../symptoms/symptoms';
 import { GenericPage } from '../generic/generic';
 
