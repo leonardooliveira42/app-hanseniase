@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, LoadingController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
@@ -19,17 +19,21 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
+  loader: any;
   rootPage: any = HomePage;
   pages: Array<{title: string, component: any}>;
   showFooter: boolean = false;
+
   constructor(
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public navChangeProvider: NavChangeProvider,
-    public storage: Storage
+    public storage: Storage,
+    public loadingCtrl: LoadingController
   ) {
+
+    this.presentLoading();
     this.initializeApp();
 
 
@@ -54,6 +58,8 @@ export class MyApp {
           this.rootPage = HowToUsePage;
         }
 
+        this.loader.dismiss();
+
       });
       this.statusBar.styleDefault();
       this.splashScreen.hide();
@@ -75,6 +81,17 @@ export class MyApp {
 
   goToRoot(){
     this.nav.popToRoot();
+  }
+
+  presentLoading() {
+
+    this.loader = this.loadingCtrl.create({
+      spinner: "crescent",
+      content: "Carregando..."
+    });
+
+    this.loader.present();
+
   }
 
 }
