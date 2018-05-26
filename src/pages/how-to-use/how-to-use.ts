@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { Storage } from '@ionic/storage';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the HowToUsePage page.
  *
@@ -13,11 +14,15 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'how-to-use.html',
 })
 export class HowToUsePage {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage) {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
   }
 
+  goToHome(){
+    this.storage.set('introShown',true);
+    this.navCtrl.setRoot(HomePage)
+  }
 }

@@ -2,6 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Storage } from '@ionic/storage';
+
 
 // pages
 import { HomePage } from '../pages/home/home';
@@ -25,9 +27,11 @@ export class MyApp {
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
-    public navChangeProvider: NavChangeProvider
+    public navChangeProvider: NavChangeProvider,
+    public storage: Storage
   ) {
     this.initializeApp();
+
 
     //ngFor and navigation
     this.pages = [
@@ -43,6 +47,14 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      this.storage.get('introShown').then((result) => {
+        if(result){
+          this.rootPage = HomePage;
+        } else {
+          this.rootPage = HowToUsePage;
+        }
+
+      });
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
