@@ -23,6 +23,8 @@ export class MyApp {
   rootPage: any = HomePage;
   pages: Array<{title: string, component: any}>;
   showFooter: boolean = false;
+  blankSrc: boolean =  false;
+
 
   constructor(
     public platform: Platform,
@@ -40,7 +42,7 @@ export class MyApp {
     //ngFor and navigation
     this.pages = [
       { title: 'Início', component: HomePage },
-      { title: 'Como usar', component: HowToUsePage },
+      { title: 'Sobre', component: HowToUsePage },
       { title: 'Bibliografia', component: ReferencesPage },
       { title: 'Criação e Apoio', component: AboutPage },
     ];
@@ -68,7 +70,15 @@ export class MyApp {
 
   ngOnInit(){
     this.navChangeProvider.getNavChangeEmitter()
-      .subscribe(item => {this.showFooter =  item});
+      .subscribe(item => {
+        this.showFooter =  item;
+
+        if(this.nav.getActive().name == "HowToUsePage"){
+          this.blankSrc = true;
+        }else{
+          this.blankSrc = false;
+        }
+      });
   }
 
   openPage(page) {

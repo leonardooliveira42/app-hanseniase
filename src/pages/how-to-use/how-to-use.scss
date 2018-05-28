@@ -55,4 +55,9 @@ page-how-to-use{
     line-height: 1.5;
   }
 
+  #start-button > span{
+    color: $primary;
+    font-weight: 600;
+    font-size: 1.45rem;
+  }
 }
