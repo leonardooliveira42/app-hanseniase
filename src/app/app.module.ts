@@ -11,7 +11,7 @@ import { AboutPage } from '../pages/about/about';
 import { GenericPage } from '../pages/generic/generic';
 import { ItemsTypePage } from '../pages/items-type/items-type';
 import { VideosPage } from '../pages/videos/videos';
-
+import { ModalPage } from '../pages/modal/modal';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -31,7 +31,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     AboutPage,
     GenericPage,
     ItemsTypePage,
-    VideosPage
+    VideosPage,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     AboutPage,
     GenericPage,
     ItemsTypePage,
-    VideosPage
+    VideosPage,
+    ModalPage
   ],
   providers: [
     StatusBar,
