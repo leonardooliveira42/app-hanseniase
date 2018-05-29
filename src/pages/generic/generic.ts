@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { ImageViewerController } from 'ionic-img-viewer';
 
 import { GenericProvider } from '../../providers/generic/generic';
 
@@ -16,16 +17,24 @@ import { GenericProvider } from '../../providers/generic/generic';
 })
 export class GenericPage {
 
+  renderObj: any = {};
+  _imageViewerCtrl: ImageViewerController;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public genericProvider: GenericProvider
-  ) { }
+    public genericProvider: GenericProvider,
+    public imageViewerCtrl: ImageViewerController
+  ) { this._imageViewerCtrl = imageViewerCtrl;}
 
-  renderObj: any = {};
+
 
   ionViewDidLoad() {
     this.renderObj = this.genericProvider.getRenderObj();
+  }
+
+  presentImage(myImage) {
+    const imageViewer = this._imageViewerCtrl.create(myImage);
+    imageViewer.present();
   }
 
 }
