@@ -1,0 +1,30 @@
+page-videos {
+  span{
+    display: block;
+  }
+
+  ion-row > div{
+    width: 300px;
+  }
+
+  .video-title{
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .play-video{
+    float: right;
+    background: none;
+    & > img{
+      width: 1.8rem;
+    }
+  }
+
+  .video-container{
+    margin-bottom: 30px;
+  }
+
+  .play-container{
+    padding: 8px;
+  }
+}

@@ -25,7 +25,7 @@ export class ItemsTypeProvider {
           description: 'Comprometimento nervo periférico',
           clickable: true
         },
-      ],
+      ]
     },
     {
      id: 'fazer',
@@ -41,8 +41,8 @@ export class ItemsTypeProvider {
          description: 'Encaminhar o caso suspeito a um serviço de saúde de referência para confirmação diagnóstica',
          clickable: false
        },
-     ],
-    }
+     ]
+   }
   ];
 
   renderObj: any = {};

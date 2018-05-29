@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { GenericPage } from '../generic/generic';
+import { VideosPage } from '../videos/videos';
 
 
 import { ItemsTypeProvider } from '../../providers/items-type/items-type';
@@ -25,23 +26,19 @@ export class ItemsTypePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public itemsTypeProvider: ItemsTypeProvider,
-    public genericProvider: GenericProvider,
-    // public hansTypeProvider: HansTypeProvider
+    public genericProvider: GenericProvider
   ) {}
 
   ionViewDidLoad() {
     this.renderObj = this.itemsTypeProvider.getRenderObj()
   }
 
-  // //open the hansTypePage by id
-  // openHansType(type){
-  //   this.hansTypeProvider.setRenderObj(type);
-  //   this.navCtrl.push(HansTypePage);
-  // }
-
   openItemType(item){
     if(item.clickable){
-      if(item.id == "lesao" || item.id == "nervo"){
+      this.genericProvider.setRenderObj(item.id);
+      if(item.id == "exame"){
+        this.navCtrl.push(VideosPage);
+      }else{
         this.genericProvider.setRenderObj(item.id);
         this.navCtrl.push(GenericPage);
       }

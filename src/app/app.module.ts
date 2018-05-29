@@ -10,6 +10,8 @@ import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
 import { GenericPage } from '../pages/generic/generic';
 import { ItemsTypePage } from '../pages/items-type/items-type';
+import { VideosPage } from '../pages/videos/videos';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -28,7 +30,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     ReferencesPage,
     AboutPage,
     GenericPage,
-    ItemsTypePage
+    ItemsTypePage,
+    VideosPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     ReferencesPage,
     AboutPage,
     GenericPage,
-    ItemsTypePage
+    ItemsTypePage,
+    VideosPage
   ],
   providers: [
     StatusBar,

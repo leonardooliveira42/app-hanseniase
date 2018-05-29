@@ -14,10 +14,10 @@
 
 <ion-content>
   <ion-row class="little-margin-top"></ion-row>
-  <ion-card class="node" *ngFor="let node of renderObj.nodes" padding (click)="openItemType(node)">
-    <span class="node-text" >{{ node.description }}</span>
-    <ion-row justify-content-end>
-      <ion-icon name="arrow-round-forward" *ngIf="node.clickable"></ion-icon>
-    </ion-row>
-  </ion-card>
+    <ion-card class="node" *ngFor="let node of renderObj.nodes" padding (click)="openItemType(node)">
+      <span class="node-text" >{{ node.description }}</span>
+      <ion-row justify-content-end>
+        <ion-icon name="arrow-round-forward" *ngIf="node.clickable"></ion-icon>
+      </ion-row>
+    </ion-card>
 </ion-content>
