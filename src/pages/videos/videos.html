@@ -17,18 +17,18 @@
   <ion-row class="align-all-items-center">
     <div class="video-container">
       <span class="video-title"> Avaliação da função neural</span>
-      <span class="node play-container">
+      <span class="node play-container" (click)="openVideo('muscular')">
         Teste de força muscular
-        <button class="play-video" (click)="openVideo('muscular')">
-          <img src="../../assets/icon/seta.png"/>
+        <button class="play-video">
+          <img src="./assets/icon/seta.png"/>
         </button>
       </span>
     </div>
     <div class="video-container">
       <span class="video-title"> Avaliação da incapacidade física</span>
-      <div class="node play-container">
+      <div class="node play-container" (click)="openVideo('senbilidade')">
         Teste de Sensibilidade
-        <button class="play-video" (click)="openVideo('senbilidade')">
+        <button class="play-video">
           <img src="./assets/icon/seta.png"/>
         </button>
       </div>
