@@ -12,13 +12,15 @@
 
 
 <ion-content>
-  <ion-card class="node little-margin-top" padding-right>
+  <ion-card class="node little-margin-top" padding-right *ngIf="renderObj.descriptions &&  renderObj.descriptions.length > 0">
     <ul>
       <li class="node-text" *ngFor="let p of renderObj.descriptions" padding-bottom>
         {{ p }}
       </li>
     </ul>
-    <!-- <img *ngFor="let im of renderObj.imgs" src="{{ im }}"/> -->
+  </ion-card>
+  <ion-card class="node little-margin-top" padding *ngIf="renderObj.imgs &&  renderObj.imgs.length > 0" >
+    <img *ngFor="let im of renderObj.imgs" src="{{ im }}" margin-bottom/>
   </ion-card>
 
 </ion-content>

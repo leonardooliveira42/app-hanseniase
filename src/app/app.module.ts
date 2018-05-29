@@ -8,14 +8,17 @@ import { HomePage } from '../pages/home/home';
 import { HowToUsePage } from '../pages/how-to-use/how-to-use';
 import { ReferencesPage } from '../pages/references/references';
 import { AboutPage } from '../pages/about/about';
-import { SymptomsPage } from '../pages/symptoms/symptoms';
 import { GenericPage } from '../pages/generic/generic';
+import { ItemsTypePage } from '../pages/items-type/items-type';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SymptomsProvider } from '../providers/symptoms-provider/symptoms-provider';
+
 import { GenericProvider } from '../providers/generic/generic';
+import { ItemsTypeProvider } from '../providers/items-type/items-type';
 import { NavChangeProvider } from '../providers/nav-change/nav-change';
+
 
 @NgModule({
   declarations: [
@@ -24,8 +27,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     HowToUsePage,
     ReferencesPage,
     AboutPage,
-    SymptomsPage,
-    GenericPage
+    GenericPage,
+    ItemsTypePage
   ],
   imports: [
     BrowserModule,
@@ -39,16 +42,16 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     HowToUsePage,
     ReferencesPage,
     AboutPage,
-    SymptomsPage,
-    GenericPage
+    GenericPage,
+    ItemsTypePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SymptomsProvider,
     GenericProvider,
-    NavChangeProvider
+    NavChangeProvider,
+    ItemsTypeProvider
   ]
 })
 export class AppModule {}

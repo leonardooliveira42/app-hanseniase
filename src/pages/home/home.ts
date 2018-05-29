@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { SymptomsPage } from '../symptoms/symptoms';
+import { ItemsTypePage } from '../items-type/items-type';
 import { GenericPage } from '../generic/generic';
 
-import { SymptomsProvider } from '../../providers/symptoms-provider/symptoms-provider';
+import { ItemsTypeProvider } from '../../providers/items-type/items-type';
 import { GenericProvider } from '../../providers/generic/generic';
 import { NavChangeProvider } from '../../providers/nav-change/nav-change';
 
@@ -28,55 +28,20 @@ export class HomePage {
       title: 'o que fazer',
       subtitle: '',
       icon: './assets/icon/o-que-fazer.png',
-      component: GenericPage
+      component: ItemsTypePage
     },
     {
-      id: 'neural',
+      id: 'sinais',
       title: 'sinais e sintomas',
       subtitle: '',
       icon: './assets/icon/sinais.png',
-      component: SymptomsPage
+      component: ItemsTypePage
     }
-    // {
-    //   id: 'manchas',
-    //   title: 'sinais e sintomas',
-    //   subtitle: 'manchas',
-    //   icon: './assets/icon/sinais-manchas.png',
-    //   component: SymptomsPage
-    // },
-    // {
-    //   id:'outros',
-    //   title: 'outros sinais e sintomas',
-    //   subtitle: '',
-    //   icon: './assets/icon/outros.png',
-    //   component: SymptomsPage
-    // },
-    // {
-    //   id: 'profissional',
-    //   title: 'se você não é um professional de saúde o que fazer',
-    //   subtitle: '',
-    //   icon: './assets/icon/ambulancia.png',
-    //   component: GenericPage
-    // },
-    // {
-    //   id: 'como',
-    //   title: 'como usar o app?',
-    //   subtitle: '',
-    //   icon: './assets/icon/como-usar.png',
-    //   component: HowToUsePage
-    // },
-    // {
-    //   id: 'referencias',
-    //   title: 'referências',
-    //   subtitle: '',
-    //   icon: './assets/icon/referencias.png',
-    //   component: ReferencesPage
-    // }
   ];
 
   constructor(
     public navCtrl: NavController,
-    public symptomsProvider: SymptomsProvider,
+    public itemsTypeProvider: ItemsTypeProvider,
     public genericProvider: GenericProvider,
     public navChangeProvider: NavChangeProvider
   ) { }
@@ -94,10 +59,10 @@ export class HomePage {
     this.navCtrl.push(option.component);
 
     //in case of option is about symptoms
-    if(option.id == 'neural' || option.id == 'manchas' || option.id == 'outros'){
-      this.symptomsProvider.setRenderObj(option.id);
-    }else{
+    if(option.id == 'eh'){
       this.genericProvider.setRenderObj(option.id);
+    }else{
+      this.itemsTypeProvider.setRenderObj(option.id);
     }
   }
 

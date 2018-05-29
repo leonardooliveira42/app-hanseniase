@@ -11,9 +11,6 @@
   text-align: center;
 }
 
-.little-padding-bottom{
-  padding-bottom: 10px !important;
-}
 
 ion-card{
   box-shadow: none !important;
@@ -54,6 +51,7 @@ ion-card{
 .node{
   border: $border-primary;
   border-radius: 8px !important;
+  margin-bottom: 30px;
 }
 
 .node-text{
