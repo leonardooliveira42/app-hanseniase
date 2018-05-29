@@ -22,7 +22,7 @@ export class VideosPage {
   }
 
   openVideo(source){
-    let obj = {}
+    let obj = {src: '', title: ''};
     if(source == 'muscular'){
       obj.src = './assets/imgs/movie.mp4';
       obj.title = 'Teste de força muscular'
