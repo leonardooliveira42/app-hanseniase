@@ -1,6 +1,6 @@
 {
   "name": "app-hanseniase",
-  "app_id": "",
+  "app_id": "ebe77a49",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
