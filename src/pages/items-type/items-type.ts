@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { GenericPage } from '../generic/generic';
-import { VideosPage } from '../videos/videos';
+import { ExamTypePage } from '../exam-type/exam-type';
 
 
 import { ItemsTypeProvider } from '../../providers/items-type/items-type';
@@ -37,7 +37,7 @@ export class ItemsTypePage {
     if(item.clickable){
       this.genericProvider.setRenderObj(item.id);
       if(item.id == "exame"){
-        this.navCtrl.push(VideosPage);
+        this.navCtrl.push(ExamTypePage);
       }else{
         this.genericProvider.setRenderObj(item.id);
         this.navCtrl.push(GenericPage);

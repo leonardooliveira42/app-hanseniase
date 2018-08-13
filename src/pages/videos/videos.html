@@ -7,31 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Exame dermatoneurológico</ion-title>
+    <ion-title>{{ renderObj.title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-row class="little-margin-top"></ion-row>
   <ion-row class="align-all-items-center">
-    <div class="video-container">
-      <span class="video-title"> Avaliação da função neural</span>
-      <span class="node play-container" (click)="openVideo('muscular')">
-        Teste de força muscular
+    <div *ngFor="let video of renderObj.toRender" class="video-container">
+      <span class="node play-container" (click)="openVideo(video.id)">
+        {{ video.title }}
         <button class="play-video">
           <img src="./assets/icon/seta.png"/>
         </button>
       </span>
-    </div>
-    <div class="video-container">
-      <span class="video-title"> Avaliação da incapacidade física</span>
-      <div class="node play-container" (click)="openVideo('senbilidade')">
-        Teste de Sensibilidade
-        <button class="play-video">
-          <img src="./assets/icon/seta.png"/>
-        </button>
-      </div>
     </div>
   </ion-row>
 </ion-content>

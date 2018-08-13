@@ -14,10 +14,15 @@ import { NavController, NavParams, ViewController } from 'ionic-angular';
 })
 export class ModalPage {
 
-  renderObj: any = {src: '',title: ''};
+  renderObj: any = {
+    title: '',
+    icon: '',
+    srcs: []
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
-     this.renderObj.src = navParams.get('src');
-     this.renderObj.title = navParams.get('title');
+    this.renderObj.title = navParams.get('title');
+    this.renderObj.icon = navParams.get('icon');
+    this.renderObj.srcs = navParams.get('srcs');
   }
 
   ionViewDidLoad() {

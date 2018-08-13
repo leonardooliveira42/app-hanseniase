@@ -13,6 +13,8 @@ import { GenericPage } from '../pages/generic/generic';
 import { ItemsTypePage } from '../pages/items-type/items-type';
 import { VideosPage } from '../pages/videos/videos';
 import { ModalPage } from '../pages/modal/modal';
+import { ExamTypePage } from '../pages/exam-type/exam-type';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -33,7 +35,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     GenericPage,
     ItemsTypePage,
     VideosPage,
-    ModalPage
+    ModalPage,
+    ExamTypePage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { NavChangeProvider } from '../providers/nav-change/nav-change';
     GenericPage,
     ItemsTypePage,
     VideosPage,
-    ModalPage
+    ModalPage,
+    ExamTypePage
   ],
   providers: [
     StatusBar,
