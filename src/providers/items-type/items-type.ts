@@ -17,19 +17,19 @@ export class ItemsTypeProvider {
       nodes: [
         {
           id: 'lesao',
-          description: 'Lesão',
+          description: 'Lesões',
           clickable: true
         },
         {
           id: 'nervo',
-          description: 'Comprometimento nervo periférico',
+          description: 'Comprometimento de nervos',
           clickable: true
         },
       ]
     },
     {
      id: 'fazer',
-     title: 'O que fazer na suspeita',
+     title: 'O que fazer na suspeita?',
      nodes: [
        {
          id: 'exame',

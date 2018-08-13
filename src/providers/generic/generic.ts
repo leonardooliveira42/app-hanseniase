@@ -11,32 +11,55 @@ export class GenericProvider {
   pages: any = [
     {
       id: 'eh',
-      title: 'O que é a doença hanseníase',
+      title: 'O que é a hanseníase',
       descriptions: [
-        `Causada pela Mycobacterium leprae que infecta
-        nervos periféricos`,
-        `Primeiros sinais e sintomas são lesão ou mancha de
-        pele com ou sem espessamento do nervo com
-        perda de sensibilidade`,
-        `Regiões com queda de pelo, pele seca e que ardem,
-        cocem ou piniquem`,
+        `É uma doença causada pela Mycobacterium leprae que infecta nervos periféricos`,
+        `Primeiros sinais e sintomas são áreas da pele com alteração de
+        sensibilidade com ou sem comprometimento de nervos periféricos em lesão
+        única ou em múltiplas lesões`,
+        `Regiões da pele com alopecia e/ou anidrose`,
         `Notificação compulsória na confirmação do diagnóstico`,
-        `Investigação epidemiológica obrigatória para o caso
-        confirmado e seus contatos`
+        `Investigação epidemiológica obrigatória para o caso confirmado e seus contatos intradomiciliares`
       ],
       imgs: []
     },
     {
       id: 'lesao',
-      title: 'Lesão',
+      title: 'Lesões',
       descriptions: [],
-      imgs: ['./assets/imgs/img1.png','./assets/imgs/img2.png','./assets/imgs/img3.png','./assets/imgs/img4.png','./assets/imgs/img5.png']
+      imgs: [
+        {
+          src: './assets/imgs/img1.png',
+          label: 'Lesão indeterminada paucibacilar (manchas hipocrômicas com ou sem diminuição da sudorese e rarefação de pelos)'
+        },
+        {
+          src: './assets/imgs/img2.png',
+          label: 'Lesão tuberculóide paucibacilar (placa eritematosa, hipocrômica e bem delimitada)'
+        },
+        {
+          src: './assets/imgs/img3.png',
+          label: 'Lesões dimorfas multibacilares (pré-faveolares eritematosas planas com o centro claro e faveolares de tonalidade ferruginosa ou pardacenta)'
+        },
+        {
+          src: './assets/imgs/img4.png',
+          label: 'Lesão virchowiana multibacilar (placa eritematosa de pele infiltrada e de bordas mal definidas com nódulos)'
+        }
+      ]
     },
     {
       id: 'nervo',
-      title: 'Comprometimento do nervo periférico',
+      title: 'Comprometimento de nervos',
       descriptions: [],
-      imgs: ['./assets/imgs/img6.png','./assets/imgs/img7.png']
+      imgs: [
+        {
+          src: './assets/imgs/img5.png',
+          label: 'Nervo auricular espessado'
+        },
+        {
+          src: './assets/imgs/img6.png',
+          label: 'Nervo ulnar espessado'
+        }
+      ]
     }
   ];
 

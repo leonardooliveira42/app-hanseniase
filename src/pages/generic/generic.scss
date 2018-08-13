@@ -6,4 +6,14 @@ page-generic {
   li{
     line-height: 1.5;
   }
+
+  .img-label{
+    li{
+      margin-bottom: 10px;
+    }
+
+    img{
+      margin-bottom: 30px !important;
+    }
+  }
 }

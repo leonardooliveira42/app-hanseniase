@@ -26,23 +26,19 @@ export class AboutPage{
     authors: Array<{type: string, names: string}> = [
         {
           type: 'Coordenação do Projeto',
-          names: 'Lúcia Yasuko Izumi Nichiata - Departamento de Enfermagem em Saúde Coletiva'
+          names: 'Lúcia Yasuko Izumi Nichiata – Departamento de Enfermagem em Saúde Coletiva da EEUSP'
         },
         {
           type: 'Equipe de pesquisadores',
-          names:  'Bruna Duarte Canci, Érica Gomes Pereira, Karen Namie Sakata So'
+          names:  'Bruna Duarte Canci, Érica Gomes Pereira e Karen Namie Sakata-So – Departamento de Enfermagem em Saúde Coletiva da EEUSP'
         },
         {
           type: 'Assessoria técnica',
-          names: 'Maria Ângela Bianconcini Trindade e João Avancini - Laboratório de Imunodermatologia HCFMUSP, pesquisadora Científica VI'
+          names: 'Maria Ângela Bianconcini Trindade e João de Magalhães Avancini Ferreira Alves – Divisão de Clínica Dermatológica do HCFMUS'
         },
         {
           type: 'Desenvolvimento',
-          names: 'LTIA - Laboratório de Tecnologia da Informação Aplicada - UNESP Bauru (João Vitor Mattos, Carolina Junqueira Ferreira e Daniel Jyoji Nichiata)'
-        },
-        {
-          type: 'Apoio',
-          names: 'Unidade de Vigilância em Saúde Lapa-Pinheiros da Secretaria Municipal de Saúdede São Paulo'
+          names: 'João Vitor Mattos, Carolina Junqueira Ferreira e Daniel Jyoji Nichiata - Laboratório de Tecnologia da Informação Aplicada/LTIA da UNESP'
         }
     ]
 

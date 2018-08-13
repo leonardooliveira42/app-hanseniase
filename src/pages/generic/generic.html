@@ -20,7 +20,10 @@
     </ul>
   </ion-card>
   <ion-card class="node little-margin-top" padding *ngIf="renderObj.imgs &&  renderObj.imgs.length > 0" >
-    <img *ngFor="let im of renderObj.imgs" src="{{ im }}" margin-bottom #myImage (click)="presentImage(myImage)"/>
+    <span class="img-label" *ngFor="let im of renderObj.imgs">
+      <li class="node-text"> {{ im.label }} </li>
+      <img src="{{ im.src }}" margin-bottom #myImage (click)="presentImage(myImage)"/>
+    </span>
   </ion-card>
 
 </ion-content>

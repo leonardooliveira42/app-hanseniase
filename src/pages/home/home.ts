@@ -18,17 +18,10 @@ export class HomePage {
   options: Array<{id: string, title: string, subtitle: string, icon: string, component: any}> = [
     {
       id: 'eh',
-      title: 'o que é',
+      title: 'o que é a hanseníase?',
       subtitle: '',
       icon: './assets/icon/o-que-e.png',
       component: GenericPage
-    },
-    {
-      id: 'fazer',
-      title: 'o que fazer',
-      subtitle: '',
-      icon: './assets/icon/o-que-fazer.png',
-      component: ItemsTypePage
     },
     {
       id: 'sinais',
@@ -36,7 +29,14 @@ export class HomePage {
       subtitle: '',
       icon: './assets/icon/sinais.png',
       component: ItemsTypePage
-    }
+    },
+    {
+      id: 'fazer',
+      title: 'o que fazer na suspeita?',
+      subtitle: '',
+      icon: './assets/icon/lupa.png',
+      component: ItemsTypePage
+    },
   ];
 
   constructor(
