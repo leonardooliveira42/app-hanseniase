@@ -22,7 +22,12 @@
   <ion-row class="row-page-icon">
     <img src="{{ renderObj.icon }}">
   </ion-row>
-  <video controls>
-    <!-- <source src="{{ renderObj.src }}" type="video/mp4"> -->
+  <p class="node-text" style="text-align: center;">{{videoIndex + 1}} - {{ renderObj.srcs[videoIndex].subtitle }}</p>
+  <video controls id="player" autoplay>
+    <source src="{{ renderObj.srcs[videoIndex].src }}" type="video/mp4">
   </video>
+  <ion-row justify-content-center margin-top class="video-index-control">
+    <button ion-button (click)="subIndex()" *ngIf="videoIndex >= 1"><ion-icon name="arrow-back" margin-right></ion-icon> Anterior</button>
+    <button ion-button (click)="addIndex()" *ngIf="videoIndex < renderObj.srcs.length - 1">Próximo <ion-icon name="arrow-forward" margin-left></ion-icon></button>
+  </ion-row>
 </ion-content>
