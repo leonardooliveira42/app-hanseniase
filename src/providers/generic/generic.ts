@@ -11,9 +11,9 @@ export class GenericProvider {
   pages: any = [
     {
       id: 'eh',
-      title: 'O que é a hanseníase',
+      title: 'O que é a doença hanseníase?',
       descriptions: [
-        `É uma doença causada pela Mycobacterium leprae que infecta nervos periféricos`,
+        `Causada pela Mycobacterium leprae que infecta nervos periféricos`,
         `Primeiros sinais e sintomas são áreas da pele com alteração de
         sensibilidade com ou sem comprometimento de nervos periféricos em lesão
         única ou em múltiplas lesões`,

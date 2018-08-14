@@ -12,7 +12,7 @@
     <img id="logo" src="./assets/imgs/logo.png">
   </ion-row>
   <ion-row class="row-pyramid">
-    <ion-card class="node" *ngFor="let option of options" col-5 ion-col (click)="openPage(option)">
+    <ion-card class="node" *ngFor="let option of options" (click)="openPage(option)">
       <ion-card-content class="align-all-items-center">
         <ion-row>
           <img src="{{ option.icon }}">

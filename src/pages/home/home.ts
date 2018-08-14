@@ -18,7 +18,7 @@ export class HomePage {
   options: Array<{id: string, title: string, subtitle: string, icon: string, component: any}> = [
     {
       id: 'eh',
-      title: 'o que é a hanseníase?',
+      title: 'o que é a doença hanseníase?',
       subtitle: '',
       icon: './assets/icon/o-que-e.png',
       component: GenericPage
