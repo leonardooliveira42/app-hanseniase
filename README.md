@@ -1,5 +1,7 @@
 # app-hanseniase
 
+Google Play: https://play.google.com/store/apps/details?id=com.ltia.hanseniase
+
 ### Description
 
 This is an app for helping health profissionals on carring people with suspected leprosy. This application has essential information for tracking dermatoneurological symptoms.
