@@ -1,6 +1,7 @@
 # app-hanseniase
 
 * **Google Play:** https://play.google.com/store/apps/details?id=com.ltia.hanseniase
+* **Apple Store:** https://itunes.apple.com/us/app/hansen%C3%ADase/id1432967872?l=pt&ls=1&mt=8
 
 ### Description
 
