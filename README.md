@@ -14,9 +14,9 @@ This is a project developed by LTIA (Applied Information Technology Laboratory) 
 * Designer: Daniel Nichiata
 
 ### Researchers
-* **Coordinator:**  Lúcia Yasuko Izumi Nichiata – Department of Public Health Nursing - EEUSP 
+* **Coordinator:**  Lúcia Yasuko Izumi Nichiata – Department of Public Health Nursing - EEUSP
 * **Researchers:**  Bruna Duarte Canci, Érica Gomes Pereira e Karen Namie Sakata-So – Department of Public Health Nursing - EEUSP
-* **Technical Consultancy:** Maria Ângela Bianconcini Trindade e João de Magalhães Avancini Ferreira Alves – Dermatology Clinic Division - HCFMUS 
+* **Technical Consultancy:** Maria Ângela Bianconcini Trindade e João de Magalhães Avancini Ferreira Alves – Dermatology Clinic Division - HCFMUSP
 
 ### View the application
 Commands in the project folder:
@@ -24,7 +24,7 @@ Commands in the project folder:
 * npm install
 * ionic serve
 
-### Technologies 
+### Technologies
 
 * Ionic 3
 * Angular 5

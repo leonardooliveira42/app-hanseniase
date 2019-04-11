@@ -34,7 +34,7 @@ export class AboutPage{
         },
         {
           type: 'Assessoria técnica',
-          names: 'Maria Ângela Bianconcini Trindade e João de Magalhães Avancini Ferreira Alves – Divisão de Clínica Dermatológica do HCFMUS'
+          names: 'Maria Ângela Bianconcini Trindade e João de Magalhães Avancini Ferreira Alves – Divisão de Clínica Dermatológica do HCFMUSP'
         },
         {
           type: 'Desenvolvimento',
