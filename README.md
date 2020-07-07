@@ -29,3 +29,8 @@ Commands in the project folder:
 * Ionic 3
 * Angular 5
 * Typesccript
+
+### News/Publications
+- https://jornal.usp.br/universidade/aplicativo-auxilia-profissionais-da-saude-no-diagnostico-de-hanseniase/
+
+
