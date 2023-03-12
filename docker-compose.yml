@@ -1,0 +1,20 @@
+version: "3.5"
+services:
+  serve_ionic_app:
+    container_name: Hanseniase_dev_app
+    build: .
+    working_dir: /app
+    ports:
+      - 8100:8100
+    volumes:
+      - ./:/app
+    command: sh -c "npm install && ionic serve"
+  build_ionic_app:
+    container_name: Hanseniase_build
+    build: .
+    working_dir: /app
+    ports:
+      - 8100:8100
+    volumes:
+      - ./:/app
+    command: sh -c "npm install && ionic build --engine=browser --prod"
